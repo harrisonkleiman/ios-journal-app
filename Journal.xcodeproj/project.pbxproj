@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		7894918928205BA3009EF728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7894918828205BA3009EF728 /* AppDelegate.swift */; };
 		7894918B28205BA3009EF728 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7894918A28205BA3009EF728 /* SceneDelegate.swift */; };
-		7894918D28205BA3009EF728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7894918C28205BA3009EF728 /* ViewController.swift */; };
 		7894919028205BA3009EF728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7894918E28205BA3009EF728 /* Main.storyboard */; };
 		7894919228205BA4009EF728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7894919128205BA4009EF728 /* Assets.xcassets */; };
 		7894919528205BA4009EF728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7894919328205BA4009EF728 /* LaunchScreen.storyboard */; };
+		789491A028206025009EF728 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7894919F28206025009EF728 /* Journal.swift */; };
+		789491A2282060EC009EF728 /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789491A1282060EC009EF728 /* Entries.swift */; };
+		789491A6282062A3009EF728 /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789491A5282062A3009EF728 /* JournalController.swift */; };
+		789491A82820676E009EF728 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789491A72820676E009EF728 /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7894918528205BA3009EF728 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7894918828205BA3009EF728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7894918A28205BA3009EF728 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7894918C28205BA3009EF728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7894918F28205BA3009EF728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7894919128205BA4009EF728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7894919428205BA4009EF728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7894919628205BA4009EF728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7894919628205BA4009EF728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Journal/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		7894919F28206025009EF728 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		789491A1282060EC009EF728 /* Entries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
+		789491A5282062A3009EF728 /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
+		789491A72820676E009EF728 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		7894918728205BA3009EF728 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
-				7894918828205BA3009EF728 /* AppDelegate.swift */,
-				7894918A28205BA3009EF728 /* SceneDelegate.swift */,
-				7894918C28205BA3009EF728 /* ViewController.swift */,
+				789491A428206211009EF728 /* Model Controllers */,
+				789491A3282061C1009EF728 /* Resources */,
+				7894919E28206003009EF728 /* Model */,
 				7894918E28205BA3009EF728 /* Main.storyboard */,
-				7894919128205BA4009EF728 /* Assets.xcassets */,
 				7894919328205BA4009EF728 /* LaunchScreen.storyboard */,
-				7894919628205BA4009EF728 /* Info.plist */,
 			);
 			path = Journal;
+			sourceTree = "<group>";
+		};
+		7894919E28206003009EF728 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7894919F28206025009EF728 /* Journal.swift */,
+				789491A1282060EC009EF728 /* Entries.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		789491A3282061C1009EF728 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7894918828205BA3009EF728 /* AppDelegate.swift */,
+				7894918A28205BA3009EF728 /* SceneDelegate.swift */,
+				7894919128205BA4009EF728 /* Assets.xcassets */,
+				7894919628205BA4009EF728 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		789491A428206211009EF728 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				789491A5282062A3009EF728 /* JournalController.swift */,
+				789491A72820676E009EF728 /* EntryController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7894918D28205BA3009EF728 /* ViewController.swift in Sources */,
+				789491A82820676E009EF728 /* EntryController.swift in Sources */,
+				789491A6282062A3009EF728 /* JournalController.swift in Sources */,
 				7894918928205BA3009EF728 /* AppDelegate.swift in Sources */,
 				7894918B28205BA3009EF728 /* SceneDelegate.swift in Sources */,
+				789491A2282060EC009EF728 /* Entries.swift in Sources */,
+				789491A028206025009EF728 /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
