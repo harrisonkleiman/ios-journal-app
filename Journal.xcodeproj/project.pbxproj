@@ -16,6 +16,8 @@
 		789491A2282060EC009EF728 /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789491A1282060EC009EF728 /* Entries.swift */; };
 		789491A6282062A3009EF728 /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789491A5282062A3009EF728 /* JournalController.swift */; };
 		789491A82820676E009EF728 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789491A72820676E009EF728 /* EntryController.swift */; };
+		789491AB282084CA009EF728 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789491AA282084CA009EF728 /* EntryListTableViewController.swift */; };
+		789491AE2820AD44009EF728 /* EntryDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789491AD2820AD44009EF728 /* EntryDetialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		789491A1282060EC009EF728 /* Entries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
 		789491A5282062A3009EF728 /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
 		789491A72820676E009EF728 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		789491AA282084CA009EF728 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		789491AD2820AD44009EF728 /* EntryDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		7894918728205BA3009EF728 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				789491A92820845A009EF728 /* View Controllers */,
 				789491A428206211009EF728 /* Model Controllers */,
 				789491A3282061C1009EF728 /* Resources */,
 				7894919E28206003009EF728 /* Model */,
@@ -98,6 +103,15 @@
 				789491A72820676E009EF728 /* EntryController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		789491A92820845A009EF728 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				789491AA282084CA009EF728 /* EntryListTableViewController.swift */,
+				789491AD2820AD44009EF728 /* EntryDetialViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +188,10 @@
 				789491A82820676E009EF728 /* EntryController.swift in Sources */,
 				789491A6282062A3009EF728 /* JournalController.swift in Sources */,
 				7894918928205BA3009EF728 /* AppDelegate.swift in Sources */,
+				789491AB282084CA009EF728 /* EntryListTableViewController.swift in Sources */,
 				7894918B28205BA3009EF728 /* SceneDelegate.swift in Sources */,
 				789491A2282060EC009EF728 /* Entries.swift in Sources */,
+				789491AE2820AD44009EF728 /* EntryDetialViewController.swift in Sources */,
 				789491A028206025009EF728 /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

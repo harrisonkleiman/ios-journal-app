@@ -34,12 +34,12 @@ class JournalController {
         saveToPersistentStorage()
     }
     
-    private func fileURL() -> URL {
-        var urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDirectoryURL = urls[0].appendPathComponent("Journal.json")
-        
-        return documentsDirectoryURL
-    }
+//    private func fileURL() -> URL {
+//        var urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+//        let documentsDirectoryURL = urls[0].appendPathComponent("Journal.json")
+//
+//        return documentsDirectoryURL
+//    }
     
     func saveToPersistentStorage() {
         do {
